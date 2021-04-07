@@ -1,0 +1,445 @@
+// Layout of project
+
+//Container devices
+
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+//Mixins and media quieres
+
+@mixin responsive($device){
+
+    // for resolutions upper than 1440px
+        @if $device == xl{
+            @media  screen and (min-width: $container-xl) {
+                @content;
+            }
+        }
+    
+    // for resolution between 1140px and 1440px
+        @else if $device == l{
+            @media  screen and (max-width: $container-xl) and (min-width: $container-l){
+                @content;
+            }
+        }
+
+        @else if $device == m{
+            @media  screen and (max-width: $container-l) and (min-width: $container-m){
+                @content;
+            }
+        }
+
+        // for resolution less than 960
+        @else if $device == s{
+            @media  screen and (max-width: $container-m){
+                @content;
+            }
+        }
+
+        @else if $device == xs{
+            @media  screen and (max-width: $container-s){
+                @content;
+            }
+        }
+}
+
+
+.container{
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 96px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+
+    @include responsive(s){
+        flex-direction: column;
+        
+        padding: 32px 18px;
+    }
+}
+
+
+
+.flex-start{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-collumn{
+    flex-direction: column;
+}
+
+.relative{
+    position: relative;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+// FLEX FILHOS
+
+.flex-item-1{
+    flex: 1 1 360px;
+}
+
+.flex-item-2{
+    flex: 2 1 360px;
+}
+
+.flex-item-3{
+    flex: 3 1 360px;
+}
+
+.flex-item-4{
+    flex: 4 1 360px;
+}
+
+.flex-item-5{
+    flex: 5 1 360px;
+}
+
+.flex-item-auto{
+    flex: 2 1 auto;
+}
+
+.w-auto{
+    width: auto;
+}
+
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 75%;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+//====== HERO ====
+
+.hero{
+    height: 90vh;
+
+    @include responsive(s){
+        height: auto;
+    }
+}
+
+.imagem-hero{
+    margin: 0 auto;
+    display: flex;
+    width: 100vw;
+    position: relative;
+
+    @include responsive(s){
+        width: 0;
+        height: 0;
+        display: none;
+        pointer-events: none;
+    }
+}
+.imagem-1{
+    
+    align-items: top;
+    justify-content: center;
+    width: 425px;
+    height: 490px;
+
+    
+
+}
+
+.hero-icone-lojas{
+   
+
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+
+.bg-home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    z-index: -1;
+}
+
+// SECTION 2
+
+.list-item{
+    list-style: none;
+    position: relative;
+    
+    padding: 18px 8px 12px 72px;
+
+    margin-bottom: 48px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 64px;
+        height: 64px;
+
+    }
+}
+
+// SECTION PLANO
+.plano{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 22px;
+    width: 345px;
+    height: 562px;
+    border-radius: 56px 0 56px 0;
+    background: white;
+    
+}
+
+.tabela{
+
+    flex: 1;
+    width: 345px;
+    height: 562px;
+    background-color: white;
+    margin:12px 24px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 56px 0 56px 0;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+    transition: .7s ease;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.tabela-titulo{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    background: #8BDB58;
+    height: 48px;
+    padding: 12px 40px;
+    color: white;
+
+    @include responsive(s){
+        font-size: 12px;
+        padding: 6px 20px;
+
+    }
+}
+
+.tabela-titulo-2{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    background: #8C1D8F;
+    height: 48px;
+    padding: 12px 40px;
+    color: white;
+    @include responsive(s){
+        font-size: 12px;
+        padding: 6px 20px;
+
+    }
+}
+
+.tabela-titulo-3{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    background: #DB6C42;
+    height: 48px;
+    padding: 12px 40px;
+    color: white;
+    @include responsive(s){
+        font-size: 12px;
+        padding: 6px 20px;
+
+    }
+}
+
+.preco{
+    font-family: poppins;
+    font-size: 52px;
+    margin: 40px 0;
+    color: #8BDB58;
+    @include responsive(s){
+        font-size: 34px;
+        margin: 20px 0;
+    }
+}
+
+
+.preco-2{
+    font-family: poppins;
+    font-size: 52px;
+    margin: 40px 0;
+    color: #8C1D8F;
+    @include responsive(s){
+        font-size: 34px;
+        margin: 20px 0;
+    }
+}
+
+.preco-3{
+    font-family: poppins;
+    font-size: 52px;
+    margin: 40px 0;
+    color: #DB6C42;
+    
+    @include responsive(s){
+        font-size: 34px;
+        margin: 20px 0;
+    }
+}
+
+.preco sup, .preco span{
+    font-size: 22px;
+
+    @include responsive(s){
+        font-size: 12px;
+    }
+}
+
+.preco-2 sup, .preco-2 span{
+    font-size: 22px;
+
+    @include responsive(s){
+        font-size: 12px;
+    }
+}
+
+.preco-3 sup, .preco-3 span{
+    font-size: 22px;
+
+    @include responsive(s){
+        font-size: 12px;
+    }
+}
+
+.list-plan li{
+
+    font-size: 13px;
+    font-family: poppins;
+    color: #C8C8C8;
+    padding: 12px 32px;
+    position: relative;
+
+}
+
+.ok{
+    position: relative;
+
+    top: 18px;
+    right: -60px;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url(../../svg/ok.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    @include responsive(xl){
+
+        top: 18px;
+        right: -40px;
+
+
+    }
+
+    @include responsive(m){
+
+        top: 18px;
+        right: -10px;
+
+    }
+ 
+       
+    @include responsive(s){
+
+        top: 18px;
+        left: 45px;
+
+    }
+
+}
+
+.table-text{
+
+    text-align: center;
+    font-size: 13px;
+    color: #C8C8C8;
+    padding: 20px 12px;
+
+    margin: 12px auto;
+    @include responsive(s){
+        font-size: 8px;
+        padding: 15px 6px;
+    }
+
+}
+
+.logo-quadrada{
+
+    background-image: url(../../svg/logo-quadrada.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 12px 24px;
+    margin-left: 56px;
+    width: 348px;
+    height: 337px;
+    transition: .3s ease;
+    
+
+    &:hover{
+        transform: scale(1.02);
+    }
+
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.icon-apps{
+    display: inline-block;
+    padding: 12px 4px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+

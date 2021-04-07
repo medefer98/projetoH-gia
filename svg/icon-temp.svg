@@ -1,0 +1,23 @@
+<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-temp">
+<g id="Group 153">
+<g id="Group 128">
+<rect id="Rectangle 49" width="69" height="69" rx="16.35" fill="white"/>
+</g>
+</g>
+<g id="Group">
+<path id="Vector" d="M34.5528 46.3165C41.0497 46.3165 46.3165 41.0497 46.3165 34.5528C46.3165 28.0558 41.0497 22.789 34.5528 22.789C28.0558 22.789 22.789 28.0558 22.789 34.5528C22.789 41.0497 28.0558 46.3165 34.5528 46.3165Z" stroke="url(#paint0_linear)" stroke-width="3.71667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M34.5527 27.4945V34.5528L39.2582 36.9055" stroke="url(#paint1_linear)" stroke-width="3.71667" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="34.5528" y1="22.789" x2="34.5528" y2="46.3165" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#63FF00"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="36.9054" y1="27.4945" x2="36.9054" y2="36.9055" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#63FF00"/>
+</linearGradient>
+</defs>
+</svg>

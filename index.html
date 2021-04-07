@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="js/svg-inject.min.js"></script>
+
+    <title>Hígia</title>
+</head>
+<body>
+    <header id="header">
+
+        <!--- ======== NAVBAR MOBILE ==========-->
+        <nav class="navbar-mobile">
+            <div class="bx" id="bx"></div>
+            <div class="logo">
+                <a href="">
+                    <img src="svg/logo-hígia.svg" alt="hígia" onload="SVGInject(this)">
+                </a>
+            </div>
+            <a>Login</a>
+        </nav>
+
+        <!--- ======== NAVBAR DESKTOP ==========-->
+        <nav class="navbar-desktop">
+             <!--- ======== ITEM 1 ==========-->
+            <div class="navbar-desktop-item-1">
+                <div class="logo">
+                    <a href="">
+                        <img src="svg/logo-hígia.svg" alt="hígia" onload="SVGInject(this)">
+                    </a>
+                </div>
+                <ul class="menu-desktop">
+                    
+                    <li class="menu-item" id="menu-item-1">
+                        <a href="" class="nav-link-desktop">Planos</a>
+                        <ul class="dropdown-menu" id="dropdown-item-1">
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Individual</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Familia</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Costumizado</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="" class="nav-link-desktop-2">Fale com a hígia</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!--- ======== ITEM 2 ==========-->
+            <div class="navbar-desktop-item-2" >
+                <a href="" class="btn mr-2">Cadastre-se<img src="svg/Flecha.svg" alt="" onload="SVGInject(this) " class="flecha  "></a>
+                <a href="" class="login">Login</a>
+            </div>
+
+
+        </nav>
+
+        <!--===== MENU MOBILE ======-->
+        <nav class="menu-mobile"  id="menu-mobile" >
+            <ul class="nav-list-mobile">
+                <a class="nav-link-mobile mb-1" href="#">Planos</a>
+                <a class="nav-link-mobile mb-1"href="#">Fale com a hígia</a>
+                <a class="nav-link-mobile mb-1" href="#">Redes sociais</a>
+
+ 
+                <li class="mt-3 flex-center" >
+                    <a href="" class="mx-1"><img src="svg/Facebook.svg" alt="" onload="SVGInject(this)"></a>
+                    <a href=""class="mx-1" ><img src="svg/Instagram.svg" alt="" onload="SVGInject(this)"></a>
+                    <a href="" class="mx-1"><img src="svg/Youtube.svg" alt="" onload="SVGInject(this)"></a>
+                    <a href="" class="mx-1"><img src="svg/Twitter.svg" alt="" onload="SVGInject(this)"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- =========== HERO ===========-->
+
+    <div class="bg-home">
+        <img src="svg/BG.svg" class="svg-bg-home" alt=""  onload="SVGInject(this)">
+    </div>
+
+
+    <main class="container hero pt-5">
+
+        <div class="flex-item-1  py-3">
+            <h1 class="ml-3">Plano de saúde que combina com você</h1>
+            <p class="my-2 ml-3">Plano com custo benefício que combina com seu bolso. Realize agendamentos e consultas tudo pelo app.</p>
+        
+        <div class="flex-start ">
+            <a href="" class="btn ml-3">
+                Cadastre-se
+                <img src="svg/Flecha.svg" alt="" onload="SVGInject(this) " class="flecha  ">
+            </a> 
+
+         <a href="" class="ml-2 hero-icone-lojas" ><img src="svg/Play Store.svg" alt="" onload="SVGInject(this)"></a></a>
+         <a href="" class="ml-2 hero-icone-lojas"><img src="svg/App store.svg" alt="" onload="SVGInject(this)"></a></a>
+        </div>
+        
+        </div>
+        <div class="flex-item-2 imagem-hero flex-center mt-3">
+            <img src="img/Garoto prop.png" alt="" class="imagem-1 mr-4 ">
+        </div>
+    </main>
+        
+
+    <!-- SECTION CARTÃO-->
+
+    <section class="container flex-start ">
+        <div class="flex-item-1 py-3 mr-3 ml-3">
+            <h1 class="mb-2">Tudo que você procura em um plano</h1>
+            <p>Marque consultas e agendamentos, tudo pelo app, sem precisar realizar ligações ou ir ao local. Faça tudo pelo celular.</p>
+            <ul class="item mt-3 ml-2 ">
+                <li class="list-item bg-icon-1">
+                    <h2 >Plano que encaixa no seu bolso</h2>
+                    <p2>A hígia escolhe o plano que encaixa no seu bolso para que você possa ter um plano com a mais alta tecnologia</p2>
+                </li>
+
+                <li class="list-item bg-icon-2">
+                    <h2>Diversos lugares de atendimento</h2>
+                    <p2>A hígia está em toda parte, escolha o centro clínico mais proximo de você.</p2>
+                </li>
+
+                <li class="list-item bg-icon-3">
+                    <h2>Toda forma de cobertura</h2>
+                    <p2>Temos toda a forma de cobertura para que nada vire uma dor de cabeça.</p2>
+                </li>
+            </ul>
+        </div>
+
+        <!-- === CARD ===-->
+        <div class="div-card  py-5 pl-5 flex-center" >
+            <img src="svg/card-icon-1.svg" class="icon-card-item-1" alt="" onload="SVGInject(this)">
+            <img src="svg/card-icon-2.svg" class="icon-card-item-2" alt="" onload="SVGInject(this)">
+            <img src="svg/card-icon-3.svg" class="icon-card-item-3" alt="" onload="SVGInject(this)">
+            <div class="card mr-5"></div>
+        </div>
+    </section>
+
+
+    <!-- === SECTION APP ====-->
+
+    <section class="container ">
+        
+        <div class="flex-item-1 ml-3 ">
+            <h1 class="mb-2">Tudo pelo app</h1>
+            <p>Tudo de forma fácil para que nossos clientes tenham controle de agendamento de consultas, exames e pagamentos.</p>
+            <ul class="item mt-3 ml-2 ">
+                <li class="list-item icon-mobile">
+                    <h2 >Tudo na palma da sua mão</h2>
+                    <p2>Você resolve tudo pelo app.</p2>
+                </li>
+
+                <li class="list-item icon-temp">
+                    <h2>Sem burocracia</h2>
+                    <p2>Não tem burocracia para marcar exames ou agendar consultas.</p2>
+                </li>
+
+                <li class="list-item icon-cong">
+                    <h2>Configurações pelo app</h2>
+                    <p2>Configure sua conta e perfil pelo app.</p2>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item-1  mockup-cell">
+            <img src="svg/Tela-sem-nada.svg" alt="" onload="SVGInject(this)">
+        </div>
+
+
+    </section>
+
+    <section class="container box">
+            <h3 class="ml-3 mb-2" style="font-weight: 500;">Depoimentos</h2>
+            
+            <h1 class="ml-3" style="color: #8BDB58;font-weight: 400;">Carinho que guardamos no peito</h1>
+    </section>
+
+
+    <section class="container-swiper">
+
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="photo"></div>
+                    <div class="photo-profile photo-1"></div>
+                    <h2 class="my-1">Jorginho</h2>
+                    <p2 class="my-1"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui maecenas mollis nulla velit. Diam faucibus 
+                        nisl sit ultricies in vel semper. Volutpat, suspendisse orci eu vitae amet sit. Egestas nibh massa urna 
+                        sollicitudin non bibendum velit.
+                    </p2>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="photo-profile photo-2"></div>
+                    <h2 class="my-1">Jorginho</h2>
+                    <p2 class="my-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui maecenas mollis nulla velit. Diam faucibus 
+                        nisl sit ultricies in vel semper. Volutpat, suspendisse orci eu vitae amet sit. Egestas nibh massa urna 
+                        sollicitudin non bibendum velit.
+                    </p2>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h2 class="my-1">Jorginho</h2>
+                    <p2 class="my-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui maecenas mollis nulla velit. Diam faucibus 
+                        nisl sit ultricies in vel semper. Volutpat, suspendisse orci eu vitae amet sit. Egestas nibh massa urna 
+                        sollicitudin non bibendum velit.
+                    </p2>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="photo-profile photo-4"></div>
+                    <h2 class="my-1">Jorginho</h2>
+                    <p2 class="my-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui maecenas mollis nulla velit. Diam faucibus 
+                        nisl sit ultricies in vel semper. Volutpat, suspendisse orci eu vitae amet sit. Egestas nibh massa urna 
+                        sollicitudin non bibendum velit.
+                    </p2>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h2 class="my-1">Jorginho</h2>
+                    <p2 class="my-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui maecenas mollis nulla velit. Diam faucibus 
+                        nisl sit ultricies in vel semper. Volutpat, suspendisse orci eu vitae amet sit. Egestas nibh massa urna 
+                        sollicitudin non bibendum velit.
+                    </p2>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
+    <!-- TABELA DE PREÇOS-->
+    <section class="container flex-start pb-1 ">
+        <div><h1 class="ml-3">Planos</h1></div>
+    </section>
+
+    <section class="container flex-center ">
+    
+    
+        <div class="tabela">
+            <h1 class="tabela-titulo">Individual</h1>
+            <div class="preco"><sup>R$</sup>29,90<span>/Mês</span></div>
+            <ul class="list-plan">
+                <li><div class="ok "></div>Consultas médicas</li>
+                <li><div class="ok "></div>Exames</li>
+                <li><div class="ok "></div>Denstista</li>
+                <li><div class="ok "></div>Maternidade</li>
+            </ul>
+
+            <a href="#" class="btn-tabela">Quero esse!</a>
+        </div>
+
+        <div class="tabela">
+            <h1 class="tabela-titulo-2">Fámilia</h1>
+            <div class="preco-2"><sup>R$</sup>19,00<span>/Mês</span></div>
+            <ul  class="list-plan">
+                <li><div class="ok "></div>Consultas médicas</li>
+                <li><div class="ok "></div>Exames</li>
+                <li><div class="ok "></div>Denstista</li>
+                <li><div class="ok "></div>Maternidade</li>
+                
+            </ul>
+
+            <a href="#" class="btn-tabela-2">Quero esse!</a>
+        </div>
+
+        <div class="tabela">
+            <h1 class="tabela-titulo-3">Costumizado</h1>
+            <div class="preco-3"><sup>R$</sup>XX,XX<span>/Mês</span></div>
+            <ul  class="list-plan">
+                <li><div class="ok "></div>Consultas médicas</li>
+                <li><div class="ok "></div>Exames</li>
+                <li><div class="ok "></div>Denstista</li>
+                <li><div class="ok "></div>Maternidade</li>
+                
+            </ul>
+        
+
+            <a href="#" class="btn-tabela-3">Costumizar</a>
+        </div>
+    
+    <!-- SEXTION CALL ACTION-->
+    </section>
+
+    <section class="container">
+
+        <div class="flex-item-1 ">
+            <h1 class="ml-3">Baixe.<span style="color:#8BDB58"> É gratuito</span></h1>
+            <p class="mt-2 ml-3">Junte-se conosco e venha abrir um plano. É de graça. Pra todos e é rápido.</p>
+
+            <div class="ml-3">
+            <a href="" class="icon-apps" ><img src="svg/Play Store.svg" alt="" onload="SVGInject(this)"></a></a>
+            <a href="" class="icon-apps"><img src="svg/App store.svg" alt="" onload="SVGInject(this)"></a></a>
+            </div>    
+        </div>
+
+        <div class="logo-quadrada mr-5">
+            
+        </div>
+
+    </section>
+
+    <footer class=" footer">
+        <div class="footer-item ">
+            <div class="logo-footer">
+                <a href="" class="icon-apps"><img src="svg/logo-footer.svg" alt="" onload="SVGInject(this)"></a></a>
+            </div>
+            <div class=" footer-icons">
+                <a href="" class="mx-1"><img src="svg/fb-white.svg" alt="" onload="SVGInject(this)"></a>
+                <a href=""class="mx-1" ><img src="svg/insta-white.svg" alt="" onload="SVGInject(this)"></a>
+                <a href="" class="mx-1"><img src="svg/youtube-insta.svg" alt="" onload="SVGInject(this)"></a>
+                <a href="" class="mx-1"><img src="svg/twitter-white.svg" alt="" onload="SVGInject(this)"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--====== JS =======-->
+    
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <script>
+
+        
+
+        var swiper = new Swiper ('.swiper-container', {
+
+            slidesPerView: 'auto',
+            sapceBeteween: 40,
+            grabCursor:true,
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation:{
+                nextEl: '.button-next',
+                prevEL: '.button-prev',
+            },
+
+        });
+    </script>
+
+</body>
+    
+
+
+</html>

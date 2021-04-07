@@ -1,0 +1,41 @@
+.footer{
+    margin: 0 auto;
+    height: 350px;
+    
+    background: linear-gradient(180deg, #8BDB58 0%, #63FF00 100%);
+
+
+
+}
+
+.footer-item{
+    max-width: $container-l;
+    display: flex;
+    margin: 0 auto;
+    padding: 42px 52px;
+
+    justify-content: space-between;
+    
+    @include responsive(s){
+        max-width: $container-s;
+        display: inline-block;
+        align-items: center;
+        margin-left: 52px;
+    }
+
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-footer{
+    @include responsive(s){
+        margin-left: 70px;
+        margin-bottom: 12px;
+        
+    }
+    
+}

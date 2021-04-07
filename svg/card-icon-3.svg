@@ -1,0 +1,23 @@
+<svg width="58" height="47" viewBox="0 0 58 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="card-icon-3">
+<path id="Rectangle 71" d="M21.7859 0.778066H56.2801V24.8981C56.2801 36.5004 46.8746 45.9059 35.2723 45.9059H0.778066V21.7859C0.778066 10.1836 10.1836 0.778066 21.7859 0.778066Z" fill="white" stroke="url(#paint0_linear)" stroke-width="1.55613"/>
+<g id="Group 40">
+<rect id="Rectangle 72" x="25.1687" y="8.81808" width="6.45006" height="28.5291" fill="url(#paint1_linear)"/>
+<rect id="Rectangle 73" width="6.45006" height="28.5291" transform="matrix(0 -1 -1 0 42.5343 26.4317)" fill="url(#paint2_linear)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="28.5291" y1="0" x2="28.5291" y2="46.684" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#63FF00"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="28.3937" y1="8.81808" x2="28.3937" y2="37.3472" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#63FF00"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="3.22503" y1="0" x2="3.22503" y2="28.5291" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#63FF00"/>
+</linearGradient>
+</defs>
+</svg>

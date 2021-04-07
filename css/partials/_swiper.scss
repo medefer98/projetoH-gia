@@ -1,0 +1,130 @@
+.box{
+    max-width: $container-xl;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 16px;
+    margin-bottom: -70px;
+    
+
+}
+
+.container-swiper{
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 96px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    
+}
+
+
+.swiper-container{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    
+}
+
+
+.swiper-slide{
+    max-width: 420px;
+
+    padding: 24px 36px;
+    margin: 0px 16px;
+    border-radius: 50px 0px 56px 0px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+.button-next{
+    position: absolute;
+    right: 32px;
+    top: 24px;
+
+    width: 36px;
+    height: 36px;
+
+
+    cursor: pointer;
+    background-image: url(../../svg/Arrow-swiper-next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s ease;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.button-prev{
+    position: absolute;
+    right: 88px;
+    top: 24px;
+
+    width: 36px;
+    height: 36px;
+
+    cursor: pointer;
+    background-image: url(../../svg/Arrow-swiper-prev.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s ease;
+    
+
+    &:hover{
+        
+        transform: scale(1.2);
+    }
+
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.photo-profile{
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+        
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.photo-1{
+    background-image: url(../../img/people-1.png);
+}
+
+.photo-2{
+    background-image: url(../../img/people-2.png);
+}
+
+.photo-3{
+    background-image: url(../../img/people3.png);
+}
+
+.photo-4{
+    background-image: url(../../img/people-1.png);
+}
+
+.photo-5{
+    background-image: url(../../img/people3.png);
+}

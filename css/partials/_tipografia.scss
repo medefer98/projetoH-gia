@@ -1,0 +1,173 @@
+//typografia do projeto 
+
+
+@mixin typeface-1($size , $device: desktop) {
+
+    font-family: 'Poppins', sans-serif;
+
+    //h1
+    @if $size == h1 and $device == desktop{
+        font-size: 32px;
+        line-height: 100%;
+        font-weight: 500;
+        color: #535353;
+
+    }@else if $size == h1 and $device == mobile{
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    //h2
+    @if $size == h2 and $device == desktop{
+        font-size: 14px;
+        line-height: 125%;
+        color: #626262;
+        font-weight: 600;
+
+    }@else if $size == h2 and $device == mobile{
+        font-size: 15px;
+        line-height: 100%;
+    }
+
+    //h3
+    @if $size == h3 and $device == desktop{
+        font-size: 24px;
+        line-height: 110%;
+    }@else if $size == h3 and $device == mobile{
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    //h4
+    @if $size == h4 and $device == desktop{
+        font-size: 18px;
+        line-height: 115%;
+    }@else if $size == h4 and $device == mobile{
+        font-size: 8px;
+        line-height: 125%;
+    }
+    
+
+    //h5
+    @if $size == h5 and $device == desktop{
+        font-size:52px;
+        line-height: 100%;
+    }@else if $size == h5 and $device == mobile{
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+}
+
+
+@mixin typeface-2($size: p2, $device: mobile) {
+    font-family: 'Poppins', sans-serif;
+
+    //p1
+    @if $size == p1 and $device == desktop{
+        font-size: 16px;
+        line-height: 140%;
+    }@else if $size == p1 and $device == mobile{
+        font-size: 14px;
+        line-height: 135%;
+    }
+
+    //p2
+    @if $size == p2 and $device == desktop{
+        font-size: 12px;
+        line-height: 145%;
+    }@else if $size == p2 and $device == mobile{
+        font-size: 12px;
+        line-height: 125%;
+    }
+
+}
+
+
+
+    h1{
+        color: $black;
+        @include typeface-1(h1,desktop);
+
+        @include responsive(xs){
+            @include typeface-1(h1,mobile);
+        }
+    }
+
+    h2{
+        color: #626262;
+        @include typeface-1(h2,desktop);
+
+        @include responsive(xs){
+            @include typeface-1(h2,mobile);
+        }
+    }
+
+
+    h3{
+        color: #7E7E7E;
+        @include typeface-1(h3,desktop);
+
+        @include responsive(xs){
+            @include typeface-1(h3,mobile);
+        }
+    }
+
+
+    h4{
+        color: white;
+        @include typeface-1(h4,desktop);
+
+        @include responsive(xs){
+            @include typeface-1(h4,mobile);
+        }
+    }
+
+    h5{
+        color: white;
+        @include typeface-1(h5,desktop);
+
+        @include responsive(xs){
+            @include typeface-1(h5,mobile);
+        }
+    }
+
+//-----------------------------------------------------------------------
+
+p{
+    color:#979797;
+
+    @include typeface-2(p1,desktop);
+
+    @include responsive(xs){
+        @include typeface-2(p1,mobile)
+    }
+}
+
+p2{
+    color:#979797;
+
+    @include typeface-2(p2,desktop);
+
+    @include responsive(xs){
+        @include typeface-2(p2,mobile)
+    }
+}
+
+.bold{
+    font-weight: bold;
+    color: $black-light;
+}
+
+strong{
+    color: $black-dark;
+    @include typeface-2(p1,desktop);
+
+    @include responsive(xs){
+        @include typeface-2(p1,mobile)
+    }
+}
+
+.text-center{
+    text-align: center;
+}

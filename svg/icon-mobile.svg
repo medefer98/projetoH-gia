@@ -1,0 +1,21 @@
+<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-mobile">
+<g id="Group 113">
+<rect id="Rectangle 49" width="69" height="69" rx="16.35" fill="white"/>
+</g>
+<g id="Group">
+<path id="Vector" d="M40.5649 20.5229H29.2608C28.0122 20.5229 27 21.685 27 23.1184V43.8817C27 45.3151 28.0122 46.4771 29.2608 46.4771H40.5649C41.8135 46.4771 42.8257 45.3151 42.8257 43.8817V23.1184C42.8257 21.685 41.8135 20.5229 40.5649 20.5229Z" stroke="url(#paint0_linear)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M34.9128 41.2863H34.9246" stroke="url(#paint1_linear)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="34.9128" y1="20.5229" x2="34.9128" y2="46.4771" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#74FF1C"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="34.9187" y1="41.2863" x2="34.9187" y2="42.2863" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8BDB58"/>
+<stop offset="1" stop-color="#74FF1C"/>
+</linearGradient>
+</defs>
+</svg>
